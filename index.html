@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo de Adivinhação</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <section>
+        <h1>Jogo de Adivinhação</h1>
+        <p id="explicacao">O jogo irá gerar um número aleatório entre 1 e 100 e você terá que adivinhar qual é esse número. O jogo dará dicas, dizendo se o número chutado é maior ou menor que o número secreto. O jogo termina quando você acertar o número ou quando for atingido o número máximo de tentativas.</p>
+        <input type="number" name="palpite" id="palpite">
+        <input type="button" value="Chutar" onclick="chutar()">
+        <p id="dicas">Dica: </p>
+        <p id="restent">Tentativas restantes: </p>
+        <p style="font-size: xx-small; margin-top: 100px;">&copy; 2025 Filipe Silveira - Todos os direitos reservados</p>
+    </section>
+    
+    <script src="script.js"></script>
+</body>
+</html>
