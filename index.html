@@ -3,21 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jogo de Adivinhação</title>
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Jogo do Bruxo</title>
+    <link rel="shortcut icon" href="Fatcow-Farm-Fresh-Wizard.32.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     
     <section>
-        <h1>Jogo de Adivinhação</h1>
-        <p id="explicacao">O jogo irá gerar um número aleatório entre 1 e 100 e você terá que adivinhar qual é esse número. O jogo dará dicas, dizendo se o número chutado é maior ou menor que o número secreto. O jogo termina quando você acertar o número ou quando for atingido o número máximo de tentativas.</p>        
+        <h1>Jogo do Bruxo🧙‍♂️</h1>
+        <p id="explicacao">O bruxo escolheu um número e é necessário que você adivinhe qual é. É importante que você chute de forma certeira e para isso serão dadas algumas dicas para ajudar. Mas cuidado! Você tem apenas 10 tentativas para acertar. </p>        
         <input type="number" name="chute" id="chute">        
         <input type="button" value="Chutar" onclick="chutar()">
         <input type="button" value="Recomeçar" id="recomecar" onclick="recomecar()">
         <p id="dica" style="text-align: center;">Vamos Jogar!! </p>
-        <p id="restent">Tentativas restantes: </p>
-        <p style="font-size: xx-small; margin-top: 100px;">&copy; 2025 Filipe Silveira - Todos os direitos reservados</p>
+        <p id="restent">Tentativas restantes: 10</p>
+        <img src="/imagens/r10_atento.png" alt="bruxo" id="bruxo">
+        <p style="font-size: xx-small; margin-top: 10px;">&copy; 2025 Filipe Silveira - Todos os direitos reservados</p>
     </section>
     
     <script src="script.js"></script>
