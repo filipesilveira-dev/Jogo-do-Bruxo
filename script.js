@@ -90,7 +90,7 @@ function chutar(){
         obterElemento('btchutar').disabled = true//desabilita o elemento com id='btchutar'
 
         jogoFinalizado = true
-        return;
+        return;//encerra o programa imediatamente (retorna undefined) em caso de derrota. Utilizado para interropmper a função chutar
     }
 
     //dica se o valor informado for menor e dica se for maior
@@ -116,11 +116,12 @@ function chutar(){
         restent.style.textAlign = 'justify'
         bruxo.src= "/imagens/r10_explicando.png"
         console.log(igual)
-
-        jogoFinalizado=true
-        
-        obterElemento('chute')=''//.disabled = true//desabilita o elemento de id 'chute'
+                
+        obterElemento('chute').disabled = true//desabilita o elemento de id 'chute'
         obterElemento('btchutar').disabled = true//desabilita o elemento de id 'btchutar'
+
+        jogoFinalizado=true//consistência lógica do código
+        return;//encerra chutar() em caso de vitória
     }
     
     //mensagem exibida alertando para última tentativa
@@ -142,34 +143,20 @@ function chutar(){
         
     }
 
-    //se acertar na última tentativa, não está desabilitando chute e btchutar
-     
-    /*else if(tentativas===0 && valorInformado !=numero1e100){
-        const gg = (`Você foi dibrado(a) pelo bruxo!! O número era o ${numero1e100}. Tente novamente clicando em Recomeçar`)
-        dica.innerHTML = ''
-        restent.innerHTML = gg
-        restent.style.textAlign = 'center'
-        console.log(gg)
-
-        obterElemento('chute').disabled = true
-        obterElemento('btchutar').disabled = true
-
-        jogoFinalizado = true
-        return false;
-        console.log("Fim de jogo")
-        }   */
-    
-    
+    //se acertar na última tentativa, não está desabilitando chute e btchutar. Foi só ajeitar a linha 122 (obterElemento('chute').disabled = true//desabilita o elemento de id 'chute')    
+         
 }
 
+/*
+algo a se analisar seria a possibilidade de dividir o código em mais funções. Por exemplo:
 
-//após verificar que o número é maior: diminuir uma tentativa. Após verificar que o número é menor: diminuir uma tentativa.
-//talvez utilizar "||" para concentrar tudo em um if, representando caso seja maior e caso seja menor 
+finalizarJogoVitoria(): uma utilização quando ganhar
+finalizarJogoDerrota(): duas utilizações quando perder
+desabilitarEntradas(): duas utilização quando o joga acabar (vitória ou derrota)
+
+
+*/
     
-    /**/
-    
-
-
 function recomecar(){
     location.reload()
 }
