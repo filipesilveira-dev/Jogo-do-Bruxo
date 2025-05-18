@@ -83,7 +83,7 @@ function chutar(){
         dica.innerHTML = '' //esvazia o elemento com id='dica'
         restent.innerHTML = gg//mostra a variável 'gg' no elemento com id='restent'
         restent.style.textAlign = 'center'//centraliza o texto contido no elemento com id='restent'
-        bruxo.src= "/imagens/r10_atento.png"//altera a fonte(src) da imagem contida no elemento com id='bruxo'
+        bruxo.src= "./imagens/r10_atento.png"//altera a fonte(src) da imagem contida no elemento com id='bruxo'
         console.log(gg)//para acompanhar pelo console web
 
         obterElemento('chute').disabled = true//desabilita o elemento com id='chute'
