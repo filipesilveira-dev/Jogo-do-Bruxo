@@ -39,29 +39,29 @@ let tentativas = 10;
 //variável booleana para indicar o fim do jogo. Seja porque acertou, seja porque acabaram as tentativas
 let jogoFinalizado = false 
 
-//havia uma função fazerTentativa() para controlar a quantidade de tentativas. A mesma foi desfeita e acrescentada à função chutar()
+//havia uma função fazerTentativa() para controlar a quantidade de tentativas. A mesma foi desfeita e acrescentada à função chutar() 
 
 function chutar(){
     
     //para acompanhar a quantidade de tentativas restantes no console do navegador web
     console.log(tentativas) 
     
-    //havia um verificador de se o jogo havia acabado. Não há a necessidade mais, pois, depois de acertar, o campo de input e o botão 'chutar' são desabilitados
-       
+    //havia um verificador de se o jogo havia acabado. Não há a necessidade mais, pois, depois de acertar, o campo de input e o botão 'chutar' são desabilitados      
+    
     const valorInformado = obterValorInformado();
-
+    
     //função criada com o objetivo de limpar os dados inseridos
     limparCampos()
 
     //função criada para focar o cursor no elemento com id 'chute', evitando que o usuário precise sempre clicar novamente 
-    chute.focus() 
-    
+    chute.focus()        
+   
     //condicional caso seja digitado um valor inválido (menor ou igual à 0 OU maior que 100)
-    if(valorInformado <=0 || valorInformado>100){
-            alert("Errou. Foi muleque. O bruxo pensou num número entre 1 e 100.");
+    if(valorInformado <=0 || valorInformado>100 || isNaN(valorInformado)){
+            alert("Errou. Foi muleque. O bruxo pensou num número entre 1 e 100. Preencha adequadamente!");
             return; // o "return" implica que nenhum passo é dado na função se o número for negativo
-        }
-
+        }          
+    
     //pra conferir o número aleatório no console web
     console.log(numero1e100)   
 
