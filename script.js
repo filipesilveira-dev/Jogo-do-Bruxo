@@ -56,7 +56,7 @@ function chutar(){
     //função criada para focar o cursor no elemento com id 'chute', evitando que o usuário precise sempre clicar novamente 
     chute.focus()        
    
-    //condicional caso seja digitado um valor inválido (menor ou igual à 0 OU maior que 100)
+    //condicional caso seja digitado um valor inválido (menor ou igual à 0 OU maior que 100) ou não seja digitado nenhum valor, ou seja, se for um não número
     if(valorInformado <=0 || valorInformado>100 || isNaN(valorInformado)){
             alert("Errou. Foi muleque. O bruxo pensou num número entre 1 e 100. Preencha adequadamente!");
             return; // o "return" implica que nenhum passo é dado na função se o número for negativo
