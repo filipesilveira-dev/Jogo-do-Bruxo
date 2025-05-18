@@ -9,7 +9,7 @@
 body{
     background-color: #617446;
     
-    background-image: url(/imagens/campo1.jpg);
+    background-image: url(./imagens/campo1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;

@@ -114,7 +114,7 @@ function chutar(){
         dica.innerHTML = ''
         restent.innerHTML = igual
         restent.style.textAlign = 'justify'
-        bruxo.src= "/imagens/r10_explicando.png"
+        bruxo.src= "./imagens/r10_explicando.png"
         console.log(igual)
                 
         obterElemento('chute').disabled = true//desabilita o elemento de id 'chute'
@@ -134,7 +134,7 @@ function chutar(){
                 restent.innerHTML = ultimaTentativa
                 restent.style.textAlign = 'center'
                 restent.style.marginTop = '5px'
-                bruxo.src= "/imagens/r10_desafiando.png"
+                bruxo.src= "./imagens/r10_desafiando.png"
                 //bruxo.style.transition = 'all 10s ease-in-out';
                 //bruxo.style.transform = 'translateX(100px)'; --> desloca o elemento no eixo x
 
